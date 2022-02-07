@@ -83,7 +83,7 @@
       <workItem from="1644007664551" duration="6000" />
       <workItem from="1644049281440" duration="15653000" />
       <workItem from="1644160057993" duration="18689000" />
-      <workItem from="1644220864868" duration="7395000" />
+      <workItem from="1644220864868" duration="7999000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -106,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644232616291</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: add like button">
+      <created>1644234404573</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644234404573</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +130,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="origin/develop" />
                       </list>
                     </value>
                   </entry>
