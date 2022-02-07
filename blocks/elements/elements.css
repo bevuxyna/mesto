@@ -1,0 +1,11 @@
+.elements {
+    margin: 50px auto 66px;
+}
+
+@media screen and (max-width: 920px) {
+    .elements {
+       padding-left: 19px;
+        padding-right: 19px;
+    }
+
+}

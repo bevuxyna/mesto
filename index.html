@@ -4,21 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
+    <title>Mesto Russia</title>
 </head>
 <body class="page">
 
     <header class="header">
-        <img src="images/Vector.svg" alt="Логотип MESTO RUSSIA" class="header__logo">
+        <img src="images/logo_mesto.svg" alt="Логотип MESTO RUSSIA" class="header__logo">
     </header>
 
     <main>
+        <section class="profile">
+            <div class="profile__content">
+                <img src="images/profile_picture.jpg" alt="Жак-Ив Кусто" class="profile__avatar">
+                <div class="profile__info">
+                    <div class="profile__item">
+                        <h1 class="profile__author">Жак-Ив Кусто</h1>
+                        <button type="button" class="profile__edit-button" aria-label="Редактировать профиль"></button>
+                    </div>
+                    <p class="profile__description">Исследователь океана</p>
+                </div>
+            </div>
+            <button type="button" class="profile__add-button"></button>
+        </section>
 
+        <section class="elements">
+            <ul class="elements__box">
+                <li class="element">
+                        <img class="element__image" src="images/philipp-trubchenko-08lvM7w-G30-unsplash.jpg" alt="Озеро Байкал">
+                        <div class="element__info">
+                            <h2 class="element__title">Байкал</h2>
+                            <button class="element__like-button" aria-label="Нравится" type="button"></button>
+                        </div>
+                </li>
 
+                <li class="element">
+                        <img class="element__image" src="images/dmitrii-vaccinium-9qsK2QHidmg-unsplash.jpg" alt="Велосипедист на фоне Эльбруса">
+                        <div class="element__info">
+                            <h2 class="element__title">Эльбрус</h2>
+                            <button class="element__like-button" aria-label="Нравится" type="button"></button>
+                        </div>
+                </li>
+
+                <li class="element">
+                        <img class="element__image" src="images/nick-night-v_0g5mGwHM0-unsplash.jpg" alt="Телецкое, Республика Алтай">
+                        <div class="element__info">
+                            <h2 class="element__title">Телецкое, Республика Алтай</h2>
+                            <button class="element__like-button" aria-label="Нравится" type="button"></button>
+                        </div>
+                </li>
+
+                <li class="element">
+                        <img class="element__image" src="images/denis-zelenykh-CvSvsqdFLcI-unsplash.jpg" alt="Архыз">
+                        <div class="element__info">
+                            <h2 class="element__title">Архыз</h2>
+                            <button class="element__like-button" aria-label="Нравится" type="button"></button>
+                        </div>
+                </li>
+
+                <li class="element">
+                        <img class="element__image" src="images/victor-malyushev-qGcnIyX0SZU-unsplash%20(1).jpg" alt="Рускеала">
+                        <div class="element__info">
+                            <h2 class="element__title">Рускеала</h2>
+                            <button class="element__like-button" aria-label="Нравится" type="button"></button>
+                        </div>
+                </li>
+
+                <li class="element">
+                        <img class="element__image" src="images/fedor-shlyapnikov-mc3sRmbEA2o-unsplash%20(1).jpg" alt="Остров Русский">
+                        <div class="element__info">
+                            <h2 class="element__title">Остров Русский</h2>
+                            <button class="element__like-button" aria-label="Нравится" type="button"></button>
+                        </div>
+                </li>
+            </ul>
+        </section>
 
     </main>
 
     <footer class="footer">
         <p class="footer__copyright">&copy;&nbsp;2022 Mesto Russia</p>
     </footer>
+
+    <div class="popup">
+        <div class="popup__content">
+            <button type="button" class="popup__button-close"></button>
+            <div class="popup__container">
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <form name="popup" class="popup__form">
+                    <input type="text" name="input-name" required placeholder="Имя" class="popup__input popup__input_name">
+                    <input type="text" name="input-about" required placeholder="О себе" class="popup__input popup__input_about">
+                    <button type="submit" class="popup__button-save">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

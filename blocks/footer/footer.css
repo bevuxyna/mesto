@@ -2,3 +2,10 @@
     padding-bottom: 60px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 920px) {
+    .footer {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+}
