@@ -4,6 +4,7 @@
     font-size: 42px;
     line-height: 48px;
     color: #FFFFFF;
+    max-width: 294px;
     margin: 0;
     padding-right: 18px;
     padding-bottom: 16px;
@@ -23,5 +24,6 @@
         padding-right: 10px;
         font-size: 27px;
         line-height: 33px;
+        max-width: 189px;
     }
 }
