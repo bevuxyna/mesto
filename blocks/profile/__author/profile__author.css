@@ -7,6 +7,9 @@
     margin: 0;
     padding-right: 18px;
     padding-bottom: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 914px) {
