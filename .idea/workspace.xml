@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="feat: add header section">
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="feat: add like button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/footer/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/page/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/page/page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Vector.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo_mesto.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/profile_picture.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/kirill-pershin-1088404-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/kirill-pershin-1404681-unsplash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/kirill-pershin-1556355-unsplash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +83,7 @@
       <workItem from="1644007664551" duration="6000" />
       <workItem from="1644049281440" duration="15653000" />
       <workItem from="1644160057993" duration="18689000" />
-      <workItem from="1644220864868" duration="5846000" />
+      <workItem from="1644220864868" duration="7395000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -110,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643912941017</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add like button">
+      <created>1644232616291</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644232616291</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +137,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add header section" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add header section" />
+    <MESSAGE value="feat: add like button" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add like button" />
   </component>
 </project>
