@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="commit" />
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Inter-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Inter-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +88,7 @@
       <workItem from="1644049281440" duration="15653000" />
       <workItem from="1644160057993" duration="18689000" />
       <workItem from="1644220864868" duration="7999000" />
-      <workItem from="1644234774157" duration="340000" />
+      <workItem from="1644234774157" duration="1647000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
