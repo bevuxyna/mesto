@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__author/profile__author.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__author/profile__author.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__description/profile__description.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__description/profile__description.css" afterDir="false" />
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: overflow">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/element/__info/element__info.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__info/element__info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/element/element.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/element.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/profile/__item/profile__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__item/profile__item.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +39,10 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/blocks/profile/__description/profile__description.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/index.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -59,6 +65,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -87,7 +94,10 @@
       <workItem from="1644220864868" duration="7999000" />
       <workItem from="1644234774157" duration="2903000" />
       <workItem from="1644261148885" duration="497000" />
-      <workItem from="1644262128368" duration="540000" />
+      <workItem from="1644262128368" duration="1961000" />
+      <workItem from="1644346890195" duration="646000" />
+      <workItem from="1644347554562" duration="337000" />
+      <workItem from="1644423352206" duration="1752000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -152,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644262424242</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix: overflow">
+      <created>1644262715202</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1644262715202</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +203,11 @@
     <MESSAGE value="feat: add like button" />
     <MESSAGE value="fix: add README.md" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="fix: overflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: overflow" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
