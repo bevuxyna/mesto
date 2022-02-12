@@ -5,10 +5,13 @@
   width: 32px;
   height: 32px;
   background-color: rgba(0, 0, 0, 0);
-  align-self: flex-end;
+
   padding: 0;
   margin-bottom: 8px;
   transition: opacity 0.2s;
+  position: absolute;
+  top: -40px;
+  right: -40px;
 }
 
 .popup__button-close:hover {
