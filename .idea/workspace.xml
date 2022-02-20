@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: close button">
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: edit popup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__content/popup__content.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
@@ -103,7 +101,8 @@
       <workItem from="1644423352206" duration="2437000" />
       <workItem from="1644652971268" duration="4754000" />
       <workItem from="1644776068117" duration="109000" />
-      <workItem from="1645366546050" duration="4812000" />
+      <workItem from="1645366546050" duration="5046000" />
+      <workItem from="1645377270372" duration="6165000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -210,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644657335650</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix: edit popup">
+      <created>1645376980558</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1645376980558</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +256,8 @@
     <MESSAGE value="fix: normalize" />
     <MESSAGE value="fix: script" />
     <MESSAGE value="fix: close button" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: close button" />
+    <MESSAGE value="fix: edit popup" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: edit popup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

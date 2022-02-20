@@ -50,16 +50,28 @@
         </li>
     </template>
 
-    <div class="popup">
-            <div class="popup__container">
-                <button type="button" class="popup__button-close"></button>
-                <h2 class="popup__title">Редактировать профиль</h2>
-                <form name="popup" class="popup__form">
-                    <input type="text" name="input-name" required placeholder="Имя" class="popup__input popup__input_type_name">
-                    <input type="text" name="input-about" required placeholder="О себе" class="popup__input popup__input_type_about">
-                    <button type="submit" class="popup__button-save">Сохранить</button>
-                </form>
-            </div>
+    <div class="popup popup_type_profile">
+        <div class="popup__container">
+            <button type="button" class="popup__button-close popup__button-close_type_profile"></button>
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <form name="popup" class="popup__form popup__form_type_profile">
+                <input type="text" name="input-name" required placeholder="Имя" class="popup__input popup__input_type_name">
+                <input type="text" name="input-about" required placeholder="О себе" class="popup__input popup__input_type_about">
+                <button type="submit" class="popup__button-save">Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup popup_type_add">
+        <div class="popup__container">
+            <button type="button" class="popup__button-close popup__button-close_type_add"></button>
+            <h2 class="popup__title">Новое место</h2>
+            <form name="popup" class="popup__form popup__form_type_add">
+                <input type="text" name="input-place" required placeholder="Название" class="popup__input popup__input_type_place">
+                <input type="text" name="input-link" required placeholder="Ссылка на картинку" class="popup__input popup__input_type_link">
+                <button type="submit" class="popup__button-edit">Создать</button>
+            </form>
+        </div>
     </div>
 
     <script src="./scripts/index.js"></script>
