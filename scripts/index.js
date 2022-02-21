@@ -8,8 +8,10 @@ const formAdd = popupAdd.querySelector('.popup__form_type_add');
 
 //Кнопки
 const editButton = document.querySelector('.profile__edit-button');
-const closeButton = document.querySelector('.popup__button-close');
 const addButton = document.querySelector('.profile__add-button');
+const closeEditButton = popupEdit.querySelector('.popup__button-close_type_profile');
+const closeAddButton = popupAdd.querySelector('.popup__button-close_type_add');
+
 
 //Инпуты
 const nameInput = formEdit.querySelector('.popup__input_type_name');
@@ -23,20 +25,20 @@ const profileDescription = document.querySelector('.profile__description');
 
 
 
-function openPopup () {
-    popupEdit.classList.add('popup_opened');
+function openPopup (popup) {
+    popup.classList.add('popup_opened');
 }
 
 //Закрытие popup
 function closePopup (popup) {
-    popupEdit.classList.remove('popup_opened');
+    popup.classList.remove('popup_opened');
 }
 
-//Редактирование профиля (кнопка edit)
-function profileEddit() {
+//Открытие формы для редактирования профиля (кнопка edit)
+function profileEdit() {
     nameInput.value = profileAuthor.textContent;
     aboutInput.value = profileDescription.textContent;
-    openPopup();
+    openPopup(popupEdit);
 }
 
 //Отправка формы редактирования профиля
@@ -44,29 +46,41 @@ function formSubmitHandler (evt) {
     evt.preventDefault();
     profileAuthor.textContent = nameInput.value;
     profileDescription.textContent = aboutInput.value;
-    closePopup();
+    closePopup(popupEdit);
 }
 
-//Добавление новой карточки (кнопка add)
+//Открытие формы для добавления новой карточки (кнопка add)
 function addCard() {
-
-    openPopup();
-
+    placeInput.value = '';
+    linkInput.value = '';
+    openPopup(popupAdd);
 }
+
+//Отправка формы добавления новой карточки
+function formSubmitCards(evt){
+    evt.preventDefault();
+
+    closePopup(popupAdd);
+}
+
+
+
 
 //Обработчики событий
 
 //Открытие формы редактирования
-editButton.addEventListener('click', profileEddit);
+editButton.addEventListener('click', profileEdit);
 
 //Открытие формы добавления карточки
 addButton.addEventListener('click', addCard);
 
 //Закрытие popup
-closeButton.addEventListener('click', closePopup);
+closeEditButton.addEventListener('click',() => {closePopup(popupEdit)});
+closeAddButton.addEventListener('click',() => {closePopup(popupAdd)});
 
 //Отправка формы
 popupEdit.addEventListener('submit', formSubmitHandler);
+popupAdd.addEventListener('submit', formSubmitCards);
 
 
 //Массив карточек мест
