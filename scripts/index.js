@@ -6,12 +6,15 @@ const popupAdd = document.querySelector('.popup_type_add');
 const formEdit = popupEdit.querySelector('.popup__form_type_profile');
 const formAdd = popupAdd.querySelector('.popup__form_type_add');
 
+//Элементы формы редактирования профиля
+const profileAuthor = document.querySelector('.profile__author');
+const profileDescription = document.querySelector('.profile__description');
+
 //Кнопки
 const editButton = document.querySelector('.profile__edit-button');
 const addButton = document.querySelector('.profile__add-button');
 const closeEditButton = popupEdit.querySelector('.popup__button-close_type_profile');
 const closeAddButton = popupAdd.querySelector('.popup__button-close_type_add');
-
 
 //Инпуты
 const nameInput = formEdit.querySelector('.popup__input_type_name');
@@ -19,8 +22,38 @@ const aboutInput = formEdit.querySelector('.popup__input_type_about');
 const placeInput = formAdd.querySelector('.popup__input_type_place');
 const linkInput = formAdd.querySelector('.popup__input_type_link');
 
-const profileAuthor = document.querySelector('.profile__author');
-const profileDescription = document.querySelector('.profile__description');
+//Template карточек мест
+const cardTemplate = document.querySelector('.elements__item').content;
+const placeElement = document.querySelector('.elements__box');
+
+//Массив карточек мест
+const initialCards = [
+    {
+        name: 'Байкал',
+        link: 'images/philipp-trubchenko-08lvM7w-G30-unsplash.jpg'
+    },
+    {
+        name: 'Эльбрус',
+        link: 'images/dmitrii-vaccinium-9qsK2QHidmg-unsplash.jpg'
+    },
+    {
+        name: 'Телецкое, Республика Алтай',
+        link: 'images/nick-night-v_0g5mGwHM0-unsplash.jpg'
+    },
+    {
+        name: 'Архыз',
+        link: 'images/denis-zelenykh-CvSvsqdFLcI-unsplash.jpg'
+    },
+    {
+        name: 'Рускеала',
+        link: 'images/victor-malyushev-qGcnIyX0SZU-unsplash%20(1).jpg'
+    },
+    {
+        name: 'Остров Русский',
+        link: 'images/fedor-shlyapnikov-mc3sRmbEA2o-unsplash%20(1).jpg'
+    }
+];
+
 
 
 
@@ -63,7 +96,33 @@ function formSubmitCards(evt){
     closePopup(popupAdd);
 }
 
+//Добавление новой карточки
+const createCard = (title, link, alt) => {
+    const cardElement = cardTemplate.cloneNode(true);
+    const cardImage = cardElement.querySelector('.element__image');
+    const cardLink = cardImage.src = link;
+    const cardAlt = cardImage.alt = alt;
+    const cardTitle = cardElement.querySelector('.element__title').textContent = title;
 
+    cardElement.querySelector('.element__like-button').addEventListener('click', function (evt) {
+        evt.target.classList.toggle('element__like-button_active');
+    });
+
+    cardElement.querySelector('.element__delete-button').addEventListener('click', (evt) => {
+        evt.target.parentElement.remove();
+    });
+
+    return cardElement;
+}
+
+//Загрузка карточек из массива
+const initCards = () => {
+    initialCards.forEach((item) => {
+        placeElement.append(createCard(item.name, item.link, item.name));
+    });
+}
+
+initCards();
 
 
 //Обработчики событий
@@ -83,33 +142,8 @@ popupEdit.addEventListener('submit', formSubmitHandler);
 popupAdd.addEventListener('submit', formSubmitCards);
 
 
-//Массив карточек мест
-const initialCards = [
-    {
-        name: 'Байкал',
-        link: 'images/philipp-trubchenko-08lvM7w-G30-unsplash.jpg'
-    },
-    {
-        name: 'Эльбрус',
-        link: 'images/dmitrii-vaccinium-9qsK2QHidmg-unsplash.jpg'
-    },
-    {
-        name: 'Телецкое, Республика Алтай',
-        link: 'images/nick-night-v_0g5mGwHM0-unsplash.jpg'
-    },
-    {
-        name: 'Архыз',
-        link: 'images/denis-zelenykh-CvSvsqdFLcI-unsplash.jpg'
-    },
-    {
-        name: 'Рускеала',
-        link: 'images/victor-malyushev-qGcnIyX0SZU-unsplash%20(1).jpg'
-    },
-    {
-        name: 'Остров Русский',
-        link: 'images/fedor-shlyapnikov-mc3sRmbEA2o-unsplash%20(1).jpg'
-    }
-];
+
+
 
 
 
