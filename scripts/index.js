@@ -63,7 +63,7 @@ const initialCards = [
 
 
 
-
+//Открытие popup
 function openPopup (popup) {
     popup.classList.add('popup_opened');
 }
@@ -88,16 +88,13 @@ function formSubmitHandler (evt) {
     closePopup(popupEdit);
 }
 
-//Открытие формы для добавления новой карточки (кнопка add)
-function addCard() {
+
+//Добавление карточки нового места
+const formSubmitCard = (evt) => {
+    evt.preventDefault();
+    placeElement.prepend(createCard(placeInput.value, linkInput.value, placeInput.value));
     placeInput.value = '';
     linkInput.value = '';
-    openPopup(popupAdd);
-}
-
-//Отправка формы добавления новой карточки
-function formSubmitCards(evt){
-    evt.preventDefault();
     closePopup(popupAdd);
 }
 
@@ -119,6 +116,7 @@ const createCard = (title, link) => {
         evt.target.classList.toggle('element__like-button_active');
     });
 
+//Открытие изображения места
     cardImage.addEventListener('click', () => {
         popupPicture.src = cardLink;
         popupPicture.alt = cardAlt;
@@ -145,12 +143,11 @@ initCards();
 
 
 
-
 //Открытие формы редактирования
-editButton.addEventListener('click', profileEdit);
+editButton.addEventListener('click', () => {openPopup(popupEdit)});
 
 //Открытие формы добавления карточки
-addButton.addEventListener('click', addCard);
+addButton.addEventListener('click', () => {openPopup(popupAdd)});
 
 //Закрытие popup
 closeEditButton.addEventListener('click',() => {closePopup(popupEdit)});
@@ -159,7 +156,7 @@ closeImageButton.addEventListener('click', () => {closePopup(popupOpenImage)});
 
 //Отправка формы
 popupEdit.addEventListener('submit', formSubmitHandler);
-popupAdd.addEventListener('submit', formSubmitCards);
+popupAdd.addEventListener('submit', formSubmitCard);
 
 
 
