@@ -73,7 +73,7 @@ function closePopup (popup) {
 }
 
 //Открытие формы для редактирования профиля (кнопка edit)
-function profileEdit() {
+function editProfile() {
     nameInput.value = profileAuthor.textContent;
     aboutInput.value = profileDescription.textContent;
     openPopup(popupEdit);
@@ -85,15 +85,6 @@ function formSubmitHandler (evt) {
     profileAuthor.textContent = nameInput.value;
     profileDescription.textContent = aboutInput.value;
     closePopup(popupEdit);
-}
-
-//Добавление карточки нового места
-const formSubmitCard = (evt) => {
-    evt.preventDefault();
-    placeElement.prepend(createCard(placeInput.value, linkInput.value, placeInput.value));
-    placeInput.value = '';
-    linkInput.value = '';
-    closePopup(popupAdd);
 }
 
 //Добавление новой карточки
@@ -124,6 +115,15 @@ const createCard = (title, link) => {
     return cardElement;
 }
 
+//Добавление карточки нового места (отправка формы)
+const formSubmitCard = (evt) => {
+    evt.preventDefault();
+    placeElement.prepend(createCard(placeInput.value, linkInput.value));
+    placeInput.value = '';
+    linkInput.value = '';
+    closePopup(popupAdd);
+}
+
 //Функция удаления карточки
 function deleteCard(evt){
     evt.target.closest('.element').remove();
@@ -141,7 +141,7 @@ initCards();
 
 
 //Открытие формы редактирования
-editButton.addEventListener('click', profileEdit);
+editButton.addEventListener('click', editProfile);
 
 //Открытие формы добавления карточки
 addButton.addEventListener('click', () => {openPopup(popupAdd)});

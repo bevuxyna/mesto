@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: transitions on the CSS display property">
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: grid-template-columns">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +103,7 @@
       <workItem from="1645377270372" duration="6431000" />
       <workItem from="1645419858227" duration="148000" />
       <workItem from="1645465728314" duration="3191000" />
-      <workItem from="1645538433794" duration="9418000" />
+      <workItem from="1645538433794" duration="10781000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -265,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645553210174</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="fix: grid-template-columns">
+      <created>1645553647865</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1645553647865</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +320,8 @@
     <MESSAGE value="fix: close image popup" />
     <MESSAGE value="feat: add new card" />
     <MESSAGE value="fix: transitions on the CSS display property" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: transitions on the CSS display property" />
+    <MESSAGE value="fix: grid-template-columns" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: grid-template-columns" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
