@@ -144,7 +144,7 @@ initCards();
 
 
 //Открытие формы редактирования
-editButton.addEventListener('click', () => {openPopup(popupEdit)});
+editButton.addEventListener('click', profileEdit);
 
 //Открытие формы добавления карточки
 addButton.addEventListener('click', () => {openPopup(popupAdd)});
