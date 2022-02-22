@@ -20,6 +20,7 @@ const editButton = document.querySelector('.profile__edit-button');
 const addButton = document.querySelector('.profile__add-button');
 const closeEditButton = popupEdit.querySelector('.popup__button-close_type_profile');
 const closeAddButton = popupAdd.querySelector('.popup__button-close_type_add');
+const closeImageButton = popupOpenImage.querySelector('.popup__button-close_type_image');
 
 //Инпуты
 const nameInput = formEdit.querySelector('.popup__input_type_name');
@@ -97,7 +98,6 @@ function addCard() {
 //Отправка формы добавления новой карточки
 function formSubmitCards(evt){
     evt.preventDefault();
-
     closePopup(popupAdd);
 }
 
@@ -155,6 +155,7 @@ addButton.addEventListener('click', addCard);
 //Закрытие popup
 closeEditButton.addEventListener('click',() => {closePopup(popupEdit)});
 closeAddButton.addEventListener('click',() => {closePopup(popupAdd)});
+closeImageButton.addEventListener('click', () => {closePopup(popupOpenImage)});
 
 //Отправка формы
 popupEdit.addEventListener('submit', formSubmitHandler);
