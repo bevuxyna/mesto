@@ -80,7 +80,7 @@ function editProfile() {
 }
 
 //Отправка формы редактирования профиля
-function formSubmitHandler (evt) {
+function handleProfileFormSubmit (evt) {
     evt.preventDefault();
     profileAuthor.textContent = nameInput.value;
     profileDescription.textContent = aboutInput.value;
@@ -115,8 +115,17 @@ const createCard = (title, link) => {
     return cardElement;
 }
 
+//Загрузка карточек из массива
+const initCards = () => {
+    initialCards.forEach((item) => {
+        placeElement.append(createCard(item.name, item.link));
+    });
+}
+
+initCards();
+
 //Добавление карточки нового места (отправка формы)
-const formSubmitCard = (evt) => {
+const handleCardFormSubmit = (evt) => {
     evt.preventDefault();
     placeElement.prepend(createCard(placeInput.value, linkInput.value));
     placeInput.value = '';
@@ -128,15 +137,6 @@ const formSubmitCard = (evt) => {
 function deleteCard(evt){
     evt.target.closest('.element').remove();
 }
-
-//Загрузка карточек из массива
-const initCards = () => {
-    initialCards.forEach((item) => {
-        placeElement.append(createCard(item.name, item.link));
-    });
-}
-
-initCards();
 
 
 
@@ -152,8 +152,8 @@ closeAddButton.addEventListener('click',() => {closePopup(popupAdd)});
 closeImageButton.addEventListener('click', () => {closePopup(popupOpenImage)});
 
 //Отправка формы
-popupEdit.addEventListener('submit', formSubmitHandler);
-popupAdd.addEventListener('submit', formSubmitCard);
+popupEdit.addEventListener('submit', handleProfileFormSubmit);
+popupAdd.addEventListener('submit', handleCardFormSubmit);
 
 
 
