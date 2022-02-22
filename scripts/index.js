@@ -62,7 +62,6 @@ const initialCards = [
 
 
 
-
 //Открытие popup
 function openPopup (popup) {
     popup.classList.add('popup_opened');
@@ -88,7 +87,6 @@ function formSubmitHandler (evt) {
     closePopup(popupEdit);
 }
 
-
 //Добавление карточки нового места
 const formSubmitCard = (evt) => {
     evt.preventDefault();
@@ -106,7 +104,6 @@ const createCard = (title, link) => {
     const cardTitle = cardElement.querySelector('.element__title').textContent = title;
     const cardLink = cardImage.src = link;
     const cardAlt = cardImage.alt = title;
-
 
 //Удаление карточки
     cardElement.querySelector('.element__delete-button').addEventListener('click', deleteCard);
