@@ -32,6 +32,8 @@ const linkInput = formAdd.querySelector('.popup__input_type_link');
 const cardTemplate = document.querySelector('.elements__item').content;
 const placeElement = document.querySelector('.elements__box');
 
+const page = document.querySelector('.page');
+
 //Массив карточек мест
 const initialCards = [
     {
@@ -65,11 +67,38 @@ const initialCards = [
 //Открытие popup
 function openPopup (popup) {
     popup.classList.add('popup_opened');
+    addPopupEventListener();
 }
 
 //Закрытие popup
 function closePopup (popup) {
     popup.classList.remove('popup_opened');
+    removePopupEventListener();
+}
+
+// Закрытие popup кликом на оверлей
+page.addEventListener('click', (evt => {
+    if (evt.target.classList.contains('popup_opened')) {
+        closePopup(evt.target);
+    }
+}));
+
+//Закрытие popup нажатием на клавишу Esc
+function closePopupByEsc(evt) {
+    if (evt.key === 'Escape') {
+        const openedPopup = document.querySelector('.popup_opened');
+        closePopup(openedPopup);
+    }
+}
+
+// Установка слушателя на popup (для закрытия по esc)
+function addPopupEventListener() {
+    page.addEventListener('keydown', closePopupByEsc);
+}
+
+// Удаление слушателя с popup (для закрытия по esc)
+function removePopupEventListener() {
+    page.removeEventListener('keydown', closePopupByEsc);
 }
 
 //Открытие формы для редактирования профиля (кнопка edit)
