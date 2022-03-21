@@ -50,5 +50,5 @@
 @import url(../blocks/popup/__container-image/popup__container-image.css);
 @import url(../blocks/popup/__picture/popup__picture.css);
 @import url(../blocks/popup/__figcaption/popup__figcaption.css);
-@import url(../blocks/popup/__button-submit/popup__button-submit_disabled.css);
+@import url(../blocks/popup/__button-submit/_disabled/popup__button-submit_disabled.css);
 

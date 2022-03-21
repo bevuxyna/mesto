@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="feature: form validation">
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: form validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__button-submit/popup__button-submit_disabled.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button-submit/popup__button-submit_disabled.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__error/popup__error_visible.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__error/_visible/popup__error_visible.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__form/popup__form.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__form/popup__form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__button-submit/popup__button-submit_disabled.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button-submit/_disabled/popup__button-submit_disabled.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__input/_type/popup__input_type_error.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/_type/popup__input_type_error.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -73,6 +71,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto\blocks\popup\__button-submit\_disabled" />
       <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto\blocks\popup\__error\_visible" />
       <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto\blocks\popup\__input\_type" />
       <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto\blocks\popup\__input" />
@@ -121,7 +120,7 @@
       <workItem from="1647808469300" duration="1018000" />
       <workItem from="1647835240693" duration="321000" />
       <workItem from="1647836142164" duration="397000" />
-      <workItem from="1647841118028" duration="8855000" />
+      <workItem from="1647841118028" duration="9741000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -326,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647841469997</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fix: form validation">
+      <created>1647857091493</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1647857091494</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +385,8 @@
     <MESSAGE value="fix: minlength and maxlength atributes" />
     <MESSAGE value="feature: close popup on click outside and by pressing the esc key" />
     <MESSAGE value="feature: form validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: form validation" />
+    <MESSAGE value="fix: form validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: form validation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
