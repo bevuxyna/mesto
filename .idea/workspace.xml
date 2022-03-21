@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: disable submit button">
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -116,7 +118,9 @@
       <workItem from="1647808469300" duration="1018000" />
       <workItem from="1647835240693" duration="321000" />
       <workItem from="1647836142164" duration="397000" />
-      <workItem from="1647841118028" duration="14430000" />
+      <workItem from="1647841118028" duration="15142000" />
+      <workItem from="1647866040908" duration="63000" />
+      <workItem from="1647867931885" duration="49000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -356,7 +360,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647865190837</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="fix: disable submit button">
+      <created>1647865317682</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1647865317682</updated>
+    </task>
+    <task id="LOCAL-00036" summary="commit">
+      <created>1647865546766</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1647865546766</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +407,6 @@
     <MESSAGE value="feat: add header section" />
     <MESSAGE value="feat: add like button" />
     <MESSAGE value="fix: add README.md" />
-    <MESSAGE value="commit" />
     <MESSAGE value="fix: overflow" />
     <MESSAGE value="fix: element's direction" />
     <MESSAGE value="fix: review" />
@@ -411,7 +428,8 @@
     <MESSAGE value="feature: form validation" />
     <MESSAGE value="fix: form validation" />
     <MESSAGE value="fix: disable submit button" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: disable submit button" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
