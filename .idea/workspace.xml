@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="commit">
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: error message min-height">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__error/popup__error.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__error/popup__error.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +121,7 @@
       <workItem from="1647836142164" duration="397000" />
       <workItem from="1647841118028" duration="15142000" />
       <workItem from="1647866040908" duration="63000" />
-      <workItem from="1647867931885" duration="49000" />
+      <workItem from="1647867931885" duration="1694000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -374,7 +375,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647865546766</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="feature: cards.js">
+      <created>1647868019796</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1647868019796</updated>
+    </task>
+    <task id="LOCAL-00038" summary="fix: error message min-height">
+      <created>1647868557193</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1647868557193</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,8 +419,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add header section" />
-    <MESSAGE value="feat: add like button" />
     <MESSAGE value="fix: add README.md" />
     <MESSAGE value="fix: overflow" />
     <MESSAGE value="fix: element's direction" />
@@ -429,7 +442,9 @@
     <MESSAGE value="fix: form validation" />
     <MESSAGE value="fix: disable submit button" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="feature: cards.js" />
+    <MESSAGE value="fix: error message min-height" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: error message min-height" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

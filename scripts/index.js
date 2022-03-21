@@ -17,9 +17,9 @@ const popupPicture = popupOpenImage.querySelector('.popup__picture');
 const popupFigcaption = popupOpenImage.querySelector('.popup__figcaption');
 
 //Кнопки
-const editButton = document.querySelector('.profile__edit-button');
-const addButton = document.querySelector('.profile__add-button');
-const submitButton = popupAdd.querySelector('.popup__button-submit');
+const buttonEditProfile = document.querySelector('.profile__edit-button');
+const buttonAddCard = document.querySelector('.profile__add-button');
+const buttonSubmitForm = popupAdd.querySelector('.popup__button-submit');
 
 //Инпуты
 const nameInput = formEdit.querySelector('.popup__input_type_name');
@@ -122,8 +122,7 @@ const handleCardFormSubmit = (evt) => {
     placeElement.prepend(createCard(placeInput.value, linkInput.value));
     closePopup(popupAdd);
     formAdd.reset();
-    submitButton.disabled = true;
-    submitButton.classList.add('popup__button-submit_disabled');
+    disableSubmitButton(buttonSubmitForm, validationSettings);
 }
 
 //Функция удаления карточки
@@ -134,10 +133,10 @@ function deleteCard(evt){
 
 
 //Открытие формы редактирования
-editButton.addEventListener('click', editProfile);
+buttonEditProfile.addEventListener('click', editProfile);
 
 //Открытие формы добавления карточки
-addButton.addEventListener('click', () => {openPopup(popupAdd)});
+buttonAddCard.addEventListener('click', () => {openPopup(popupAdd)});
 
 //Отправка формы
 popupEdit.addEventListener('submit', handleProfileFormSubmit);

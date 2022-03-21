@@ -41,14 +41,22 @@ const hasInvalidInput = (inputList) => {
     })
 }
 
+const disableSubmitButton = (buttonElement, validationSettings) => {
+    buttonElement.disabled = true;
+    buttonElement.classList.add(validationSettings.submitButtonDisabled);
+}
+
+const enableSubmitButton = (buttonElement, validationSettings) => {
+    buttonElement.disabled = false;
+    buttonElement.classList.remove(validationSettings.submitButtonDisabled);
+}
+
 //Блокировку кнопки «Отправить»
 const toggleButtonState = (inputList, buttonElement, validationSettings) => {
     if (hasInvalidInput(inputList)) {
-        buttonElement.disabled = true;
-        buttonElement.classList.add(validationSettings.submitButtonDisabled);
+        disableSubmitButton(buttonElement, validationSettings);
     } else {
-        buttonElement.disabled = false;
-        buttonElement.classList.remove(validationSettings.submitButtonDisabled);
+        enableSubmitButton(buttonElement, validationSettings);
     }
 }
 
