@@ -34,12 +34,14 @@ const checkInputValidity = (formElement, inputElement, validationSettings) => {
     }
 };
 
+//Проверка, есть ли хотя бы одно поле, которое не прошло валидацию
 const hasInvalidInput = (inputList) => {
     return inputList.some((inputElement) => {
         return !inputElement.validity.valid;
     })
 };
 
+//Блокировку кнопки «Отправить»
 const toggleButtonState = (inputList, buttonElement, validationSettings) => {
     if (hasInvalidInput(inputList)) {
         buttonElement.disabled = true;
@@ -50,7 +52,7 @@ const toggleButtonState = (inputList, buttonElement, validationSettings) => {
     }
 };
 
-//Функция устанавливает слушатели событий на список всех input
+//Установка слушателей событий на список всех input
 const setEventListeners = (formElement, validationSettings) => {
     const inputList = Array.from(formElement.querySelectorAll(validationSettings.inputSelector));
     const buttonElement = formElement.querySelector(validationSettings.submitButtonSelector);

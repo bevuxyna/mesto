@@ -19,6 +19,7 @@ const popupFigcaption = popupOpenImage.querySelector('.popup__figcaption');
 //Кнопки
 const editButton = document.querySelector('.profile__edit-button');
 const addButton = document.querySelector('.profile__add-button');
+const submitButton = popupAdd.querySelector('.popup__button-submit');
 
 //Инпуты
 const nameInput = formEdit.querySelector('.popup__input_type_name');
@@ -73,7 +74,7 @@ function closePopup (popup) {
     document.removeEventListener('keydown', closePopupByEsc);
 }
 
-//Закрытие popup
+//Закрытие popup нажатием на крестик или оверлей
 popups.forEach((popup) => {
     popup.addEventListener('mousedown', (evt) => {
         if (evt.target.classList.contains('popup_opened')) {
@@ -170,8 +171,6 @@ addButton.addEventListener('click', () => {openPopup(popupAdd)});
 //Отправка формы
 popupEdit.addEventListener('submit', handleProfileFormSubmit);
 popupAdd.addEventListener('submit', handleCardFormSubmit);
-
-
 
 
 
