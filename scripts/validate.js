@@ -15,7 +15,7 @@ const showInputError = (formElement, inputElement, errorMessage, validationSetti
     inputElement.classList.add(validationSettings.inputErrorClass);
     errorElement.textContent = errorMessage;
     errorElement.classList.add(validationSettings.errorClass);
-};
+}
 
 //Спрятать ошибку
 const hideInputError = (formElement, inputElement, validationSettings) => {
@@ -23,7 +23,7 @@ const hideInputError = (formElement, inputElement, validationSettings) => {
     inputElement.classList.remove(validationSettings.inputErrorClass);
     errorElement.classList.remove(validationSettings.errorClass);
     errorElement.textContent = '';
-};
+}
 
 //Проверка валидности input
 const checkInputValidity = (formElement, inputElement, validationSettings) => {
@@ -32,14 +32,14 @@ const checkInputValidity = (formElement, inputElement, validationSettings) => {
     } else {
         hideInputError(formElement, inputElement, validationSettings);
     }
-};
+}
 
 //Проверка, есть ли хотя бы одно поле, которое не прошло валидацию
 const hasInvalidInput = (inputList) => {
     return inputList.some((inputElement) => {
         return !inputElement.validity.valid;
     })
-};
+}
 
 //Блокировку кнопки «Отправить»
 const toggleButtonState = (inputList, buttonElement, validationSettings) => {
@@ -50,7 +50,7 @@ const toggleButtonState = (inputList, buttonElement, validationSettings) => {
         buttonElement.disabled = false;
         buttonElement.classList.remove(validationSettings.submitButtonDisabled);
     }
-};
+}
 
 //Установка слушателей событий на список всех input
 const setEventListeners = (formElement, validationSettings) => {
@@ -63,7 +63,7 @@ const setEventListeners = (formElement, validationSettings) => {
             toggleButtonState(inputList, buttonElement, validationSettings);
         });
     });
-};
+}
 
 //Валидация формы
 const enableValidation = (validationSettings) => {
@@ -74,6 +74,6 @@ const enableValidation = (validationSettings) => {
         });
         setEventListeners(formElement, validationSettings);
     });
-};
+}
 
 enableValidation(validationSettings);
