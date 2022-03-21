@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: function name">
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="feature: form validation">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__button-submit/popup__button-submit_disabled.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__error/popup__error_visible.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__input/_type/popup__input_type_error.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +115,15 @@
       <workItem from="1645559160442" duration="912000" />
       <workItem from="1646737318296" duration="695000" />
       <workItem from="1646929192377" duration="29000" />
-      <workItem from="1647366887651" duration="878000" />
+      <workItem from="1647366887651" duration="2245000" />
+      <workItem from="1647457446264" duration="3445000" />
+      <workItem from="1647548934743" duration="1819000" />
+      <workItem from="1647774669297" duration="5077000" />
+      <workItem from="1647800559527" duration="7265000" />
+      <workItem from="1647808469300" duration="1018000" />
+      <workItem from="1647835240693" duration="321000" />
+      <workItem from="1647836142164" duration="397000" />
+      <workItem from="1647841118028" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -291,7 +307,21 @@
       <option name="project" value="LOCAL" />
       <updated>1645559900938</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fix: minlength and maxlength atributes">
+      <created>1647372423351</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1647372423351</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feature: close popup on click outside and by pressing the esc key">
+      <created>1647776406138</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1647776406138</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +371,10 @@
     <MESSAGE value="fix: grid-template-columns" />
     <MESSAGE value="fix" />
     <MESSAGE value="fix: function name" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: function name" />
+    <MESSAGE value="fix: minlength and maxlength atributes" />
+    <MESSAGE value="feature: close popup on click outside and by pressing the esc key" />
+    <MESSAGE value="feature: form validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: form validation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

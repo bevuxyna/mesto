@@ -1,4 +1,5 @@
 //Попапы
+const popups = document.querySelectorAll('.popup');
 const popupEdit = document.querySelector('.popup_type_profile');
 const popupAdd = document.querySelector('.popup_type_add');
 const popupOpenImage = document.querySelector('.popup_type_open-image');
@@ -18,9 +19,6 @@ const popupFigcaption = popupOpenImage.querySelector('.popup__figcaption');
 //Кнопки
 const editButton = document.querySelector('.profile__edit-button');
 const addButton = document.querySelector('.profile__add-button');
-const closeEditButton = popupEdit.querySelector('.popup__button-close_type_profile');
-const closeAddButton = popupAdd.querySelector('.popup__button-close_type_add');
-const closeImageButton = popupOpenImage.querySelector('.popup__button-close_type_image');
 
 //Инпуты
 const nameInput = formEdit.querySelector('.popup__input_type_name');
@@ -32,7 +30,6 @@ const linkInput = formAdd.querySelector('.popup__input_type_link');
 const cardTemplate = document.querySelector('.elements__item').content;
 const placeElement = document.querySelector('.elements__box');
 
-const page = document.querySelector('.page');
 
 //Массив карточек мест
 const initialCards = [
@@ -67,21 +64,26 @@ const initialCards = [
 //Открытие popup
 function openPopup (popup) {
     popup.classList.add('popup_opened');
-    addPopupEventListener();
+    document.addEventListener('keydown', closePopupByEsc);
 }
 
 //Закрытие popup
 function closePopup (popup) {
     popup.classList.remove('popup_opened');
-    removePopupEventListener();
+    document.removeEventListener('keydown', closePopupByEsc);
 }
 
-// Закрытие popup кликом на оверлей
-page.addEventListener('click', (evt => {
-    if (evt.target.classList.contains('popup_opened')) {
-        closePopup(evt.target);
-    }
-}));
+//Закрытие popup
+popups.forEach((popup) => {
+    popup.addEventListener('mousedown', (evt) => {
+        if (evt.target.classList.contains('popup_opened')) {
+            closePopup(popup);
+        }
+        if (evt.target.classList.contains('popup__button-close')) {
+            closePopup(popup);
+        }
+    });
+});
 
 //Закрытие popup нажатием на клавишу Esc
 function closePopupByEsc(evt) {
@@ -89,16 +91,6 @@ function closePopupByEsc(evt) {
         const openedPopup = document.querySelector('.popup_opened');
         closePopup(openedPopup);
     }
-}
-
-// Установка слушателя на popup (для закрытия по esc)
-function addPopupEventListener() {
-    page.addEventListener('keydown', closePopupByEsc);
-}
-
-// Удаление слушателя с popup (для закрытия по esc)
-function removePopupEventListener() {
-    page.removeEventListener('keydown', closePopupByEsc);
 }
 
 //Открытие формы для редактирования профиля (кнопка edit)
@@ -174,11 +166,6 @@ editButton.addEventListener('click', editProfile);
 
 //Открытие формы добавления карточки
 addButton.addEventListener('click', () => {openPopup(popupAdd)});
-
-//Закрытие popup
-closeEditButton.addEventListener('click',() => {closePopup(popupEdit)});
-closeAddButton.addEventListener('click',() => {closePopup(popupAdd)});
-closeImageButton.addEventListener('click', () => {closePopup(popupOpenImage)});
 
 //Отправка формы
 popupEdit.addEventListener('submit', handleProfileFormSubmit);
