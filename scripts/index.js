@@ -150,9 +150,10 @@ initCards();
 const handleCardFormSubmit = (evt) => {
     evt.preventDefault();
     placeElement.prepend(createCard(placeInput.value, linkInput.value));
-    placeInput.value = '';
-    linkInput.value = '';
     closePopup(popupAdd);
+    formAdd.reset();
+    submitButton.disabled = true;
+    submitButton.classList.add('popup__button-submit_disabled');
 }
 
 //Функция удаления карточки
