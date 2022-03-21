@@ -1,0 +1,13 @@
+.popup__error_visible {
+    width: 83.8%;
+    min-height: 12px;
+    margin: -25px auto 13px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 12px;
+    vertical-align: top;
+    font-weight: 400;
+    color: red;
+    box-sizing: border-box;
+    border: none;
+}

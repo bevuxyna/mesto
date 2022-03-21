@@ -1,5 +1,5 @@
 .popup__input {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   width: 358px;
@@ -11,6 +11,7 @@
   overflow: hidden;
   margin: 0 36px 30px;
   padding: 0;
+  vertical-align: top;
 }
 
 .popup__input:not(:focus):invalid {
