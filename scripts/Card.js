@@ -1,6 +1,4 @@
-const popupOpenImage = document.querySelector('.popup_type_open-image');
-const popupPicture = popupOpenImage.querySelector('.popup__picture');
-const popupFigcaption = popupOpenImage.querySelector('.popup__figcaption');
+import {popupOpenImage, popupPicture, popupFigcaption} from './constants.js';
 
 import{openPopup} from './index.js';
 
