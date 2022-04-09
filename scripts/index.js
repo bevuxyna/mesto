@@ -45,13 +45,13 @@ const addCardValidator = new FormValidator(validationSettings, popupAdd);
 profileValidator.enableValidation();
 addCardValidator.enableValidation();
 
-function createNewCard(item, cardTemplateSelector) {
-    const card = new Card(item, cardTemplateSelector);
+function createNewCard(data, cardTemplateSelector) {
+    const card = new Card(data, cardTemplateSelector);
     return card.createCard();
 }
 
-function addCard(item, cardSelector) {
-    const cardElement = createNewCard(item, cardSelector)
+function addCard(data, cardTemplateSelector) {
+    const cardElement = createNewCard(data, cardTemplateSelector)
     placeElement.prepend(cardElement);
 }
 
@@ -102,11 +102,8 @@ function handleProfileFormSubmit (evt) {
     closePopup(popupEdit);
 }
 
-
-
 //Загрузка карточек из массива
-
-initialCards.forEach(function(item) { // заполнение начальными карточками
+initialCards.forEach(function(item) {
     addCard(item, '.elements__item');
 });
 

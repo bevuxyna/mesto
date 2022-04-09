@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="feature: FormValidator.js">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/FormValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/FormValidator.js" afterDir="false" />
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: OOP refactoring">
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +130,7 @@
       <workItem from="1648901980709" duration="91000" />
       <workItem from="1649275381758" duration="4728000" />
       <workItem from="1649359873453" duration="5778000" />
-      <workItem from="1649533762676" duration="7770000" />
+      <workItem from="1649533762676" duration="8112000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -416,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649280407177</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="fix: OOP refactoring">
+      <created>1649541725436</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1649541725436</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: element's direction" />
     <MESSAGE value="fix: review" />
     <MESSAGE value="fix: normalize" />
     <MESSAGE value="fix: script" />
@@ -471,7 +473,8 @@
     <MESSAGE value="fix: error message min-height" />
     <MESSAGE value="feature: disableSubmitButton and enableSubmitButton functions" />
     <MESSAGE value="feature: FormValidator.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: FormValidator.js" />
+    <MESSAGE value="fix: OOP refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: OOP refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
