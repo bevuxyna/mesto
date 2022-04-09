@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: error message min-height">
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="feature: FormValidator.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__error/popup__error.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__error/popup__error.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/FormValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/FormValidator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -121,7 +122,19 @@
       <workItem from="1647836142164" duration="397000" />
       <workItem from="1647841118028" duration="15142000" />
       <workItem from="1647866040908" duration="63000" />
-      <workItem from="1647867931885" duration="1694000" />
+      <workItem from="1647867931885" duration="2640000" />
+      <workItem from="1648316492244" duration="1307000" />
+      <workItem from="1648318836217" duration="2205000" />
+      <workItem from="1648324547023" duration="1294000" />
+      <workItem from="1648327575743" duration="1030000" />
+      <workItem from="1648371910727" duration="722000" />
+      <workItem from="1648575921629" duration="731000" />
+      <workItem from="1648901592506" duration="221000" />
+      <workItem from="1648901827703" duration="140000" />
+      <workItem from="1648901980709" duration="91000" />
+      <workItem from="1649275381758" duration="4728000" />
+      <workItem from="1649359873453" duration="5778000" />
+      <workItem from="1649533762676" duration="7770000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -389,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647868557193</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="feature: disableSubmitButton and enableSubmitButton functions">
+      <created>1647869871168</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1647869871168</updated>
+    </task>
+    <task id="LOCAL-00040" summary="feature: FormValidator.js">
+      <created>1649280407177</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1649280407177</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,8 +446,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: add README.md" />
-    <MESSAGE value="fix: overflow" />
     <MESSAGE value="fix: element's direction" />
     <MESSAGE value="fix: review" />
     <MESSAGE value="fix: normalize" />
@@ -444,7 +469,9 @@
     <MESSAGE value="commit" />
     <MESSAGE value="feature: cards.js" />
     <MESSAGE value="fix: error message min-height" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: error message min-height" />
+    <MESSAGE value="feature: disableSubmitButton and enableSubmitButton functions" />
+    <MESSAGE value="feature: FormValidator.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: FormValidator.js" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
