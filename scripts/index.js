@@ -124,7 +124,10 @@ const handleCardFormSubmit = (evt) => {
 buttonEditProfile.addEventListener('click', editProfile);
 
 //Открытие формы добавления карточки
-buttonAddCard.addEventListener('click', () => {openPopup(popupAdd)});
+buttonAddCard.addEventListener('click', () => {
+    openPopup(popupAdd);
+    addCardValidator.resetValidation();
+});
 
 //Отправка формы
 popupEdit.addEventListener('submit', handleProfileFormSubmit);

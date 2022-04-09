@@ -6,3 +6,7 @@
     border-top-right-radius: 10px;
     margin: 0;
 }
+
+.element__image {
+    cursor: pointer;
+}

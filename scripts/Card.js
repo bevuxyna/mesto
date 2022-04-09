@@ -12,15 +12,22 @@ export class Card {
         this._cardTemplate = document.querySelector(this._cardTemplateSelector).content.querySelector('.element').cloneNode(true);
     }
 
+    _handleLikeButton = () => {
+        this._buttonLike.classList.toggle('element__like-button_active');
+    }
+
+    _deleteCard = () => {
+        this._cardElement.remove();
+    }
+
     _setEventListeners() {
-        this._cardElement.querySelector('.element__delete-button').addEventListener('click', () => {
-            this._cardElement.remove();
-        });
+        //Удаление карточки
+        this._cardElement.querySelector('.element__delete-button').addEventListener('click', this._deleteCard);
 
-        this._buttonLike.addEventListener('click', function (evt) {
-            evt.target.classList.toggle('element__like-button_active');
-        });
+        //Активная кнопка лайка
+        this._buttonLike.addEventListener('click', this._handleLikeButton);
 
+        //Открытие изображения места
         this._cardImage.addEventListener('click', () => {
             popupPicture.src = this._link;
             popupPicture.alt = this._title;
