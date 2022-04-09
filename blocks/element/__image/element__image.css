@@ -7,6 +7,6 @@
     margin: 0;
 }
 
-.element__image {
+.element__image:hover {
     cursor: pointer;
 }
