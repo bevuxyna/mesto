@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: element__image.css">
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: button cursor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__button-edit/popup__button-edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button-edit/popup__button-edit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__button-save/popup__button-save.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button-save/popup__button-save.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__error/popup__error.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__error/popup__error.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -135,7 +133,7 @@
       <workItem from="1649359873453" duration="5778000" />
       <workItem from="1649533762676" duration="10869000" />
       <workItem from="1649544974521" duration="110000" />
-      <workItem from="1649580733253" duration="663000" />
+      <workItem from="1649580733253" duration="1765000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add header section">
       <created>1643911366179</created>
@@ -452,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649544596640</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="fix: button cursor">
+      <created>1649581448369</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1649581448369</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: script" />
     <MESSAGE value="fix: close button" />
     <MESSAGE value="fix: edit popup" />
     <MESSAGE value="fix: add popup" />
@@ -507,7 +511,8 @@
     <MESSAGE value="fix: OOP refactoring" />
     <MESSAGE value="feature: constants.js" />
     <MESSAGE value="fix: element__image.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: element__image.css" />
+    <MESSAGE value="fix: button cursor" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: button cursor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
