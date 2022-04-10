@@ -7,7 +7,7 @@ export class Card {
         this._title = data.name;
         this._link = data.link;
         this._cardTemplateSelector = cardTemplateSelector;
-        this._cardTemplate = document.querySelector(this._cardTemplateSelector).content.querySelector('.element').cloneNode(true);
+        this._cardTemplate = document.querySelector(this._cardTemplateSelector).content.querySelector('.element');
     }
 
     _handleLikeButton = () => {
@@ -16,6 +16,7 @@ export class Card {
 
     _deleteCard = () => {
         this._cardElement.remove();
+        this._cardElement = null;
     }
 
     _setEventListeners() {

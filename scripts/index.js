@@ -45,10 +45,7 @@ function closePopup (popup) {
 //Закрытие popup нажатием на крестик или оверлей
 popups.forEach((popup) => {
     popup.addEventListener('mousedown', (evt) => {
-        if (evt.target.classList.contains('popup_opened')) {
-            closePopup(popup);
-        }
-        if (evt.target.classList.contains('popup__button-close')) {
+        if (evt.target.classList.contains('popup_opened') || evt.target.classList.contains('popup__button-close')) {
             closePopup(popup);
         }
     });
@@ -100,8 +97,8 @@ buttonEditProfile.addEventListener('click', editProfile);
 
 //Открытие формы добавления карточки
 buttonAddCard.addEventListener('click', () => {
-    openPopup(popupAdd);
     addCardValidator.resetValidation();
+    openPopup(popupAdd);
 });
 
 //Отправка формы
