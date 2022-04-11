@@ -10,7 +10,7 @@ import {
     buttonEditProfile,
     buttonAddCard,
     nameInput,
-    aboutInput, placeInput, linkInput, placeElement, validationSettings
+    aboutInput, placeInput, linkInput, placeElement, initialCards, validationSettings
 } from './constants.js';
 
 
