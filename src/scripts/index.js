@@ -1,5 +1,7 @@
-import {FormValidator} from './FormValidator.js';
-import {Card} from './Card.js';
+import '../pages/index.css';
+
+import {FormValidator} from '../components/FormValidator.js';
+import {Card} from '../components/Card.js';
 import {
     popups,
     popupEdit,
@@ -11,7 +13,7 @@ import {
     buttonAddCard,
     nameInput,
     aboutInput, placeInput, linkInput, placeElement, initialCards, validationSettings
-} from './constants.js';
+} from '../utils/constants.js';
 
 
 //Экземпляры
@@ -28,35 +30,6 @@ function createNewCard(data, cardTemplateSelector) {
 function addCard(data, cardTemplateSelector) {
     const cardElement = createNewCard(data, cardTemplateSelector)
     placeElement.prepend(cardElement);
-}
-
-//Открытие popup
-export function openPopup (popup) {
-    popup.classList.add('popup_opened');
-    document.addEventListener('keydown', closePopupByEsc);
-}
-
-//Закрытие popup
-function closePopup (popup) {
-    popup.classList.remove('popup_opened');
-    document.removeEventListener('keydown', closePopupByEsc);
-}
-
-//Закрытие popup нажатием на крестик или оверлей
-popups.forEach((popup) => {
-    popup.addEventListener('mousedown', (evt) => {
-        if (evt.target.classList.contains('popup_opened') || evt.target.classList.contains('popup__button-close')) {
-            closePopup(popup);
-        }
-    });
-});
-
-//Закрытие popup нажатием на клавишу Esc
-function closePopupByEsc(evt) {
-    if (evt.key === 'Escape') {
-        const openedPopup = document.querySelector('.popup_opened');
-        closePopup(openedPopup);
-    }
 }
 
 //Открытие формы для редактирования профиля (кнопка edit)

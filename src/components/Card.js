@@ -1,11 +1,12 @@
-import {popupOpenImage, popupPicture, popupFigcaption} from './constants.js';
+import {popupOpenImage, popupPicture, popupFigcaption} from '../utils/constants.js';
 
-import{openPopup} from './index.js';
+import{openPopup} from '../scripts/index.js';
 
 export class Card {
-    constructor(data,cardTemplateSelector) {
+    constructor({data, handleCardClick},cardTemplateSelector) {
         this._title = data.name;
         this._link = data.link;
+        this.handleCardClick = handleCardClick;
         this._cardTemplateSelector = cardTemplateSelector;
         this._cardTemplate = document.querySelector(this._cardTemplateSelector).content.querySelector('.element');
     }
@@ -28,10 +29,7 @@ export class Card {
 
         //Открытие изображения места
         this._cardImage.addEventListener('click', () => {
-            popupPicture.src = this._link;
-            popupPicture.alt = this._title;
-            popupFigcaption.textContent = this._title;
-            openPopup(popupOpenImage);
+            this.handleCardClick();
         });
     }
 
