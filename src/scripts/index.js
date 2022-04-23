@@ -2,78 +2,102 @@ import '../pages/index.css';
 
 import {FormValidator} from '../components/FormValidator.js';
 import {Card} from '../components/Card.js';
+import {Section} from "../components/Section";
+import {PopupWithForm} from "../components/PopupWithForm";
+import {PopupWithImage} from "../components/PopupWithImage";
+import {UserInfo} from "../components/UserInfo";
 import {
-    popups,
     popupEdit,
-    popupAdd,
-    formAdd,
-    profileAuthor,
-    profileDescription,
+    popupAdd, popupOpenImage,
     buttonEditProfile,
     buttonAddCard,
     nameInput,
-    aboutInput, placeInput, linkInput, placeElement, initialCards, validationSettings
+    aboutInput, initialCards, validationSettings
 } from '../utils/constants.js';
 
 
-//Экземпляры
 const profileValidator = new FormValidator(validationSettings, popupEdit);
 const addCardValidator = new FormValidator(validationSettings, popupAdd);
 profileValidator.enableValidation();
 addCardValidator.enableValidation();
 
-function createNewCard(data, cardTemplateSelector) {
-    const card = new Card(data, cardTemplateSelector);
-    return card.createCard();
-}
 
-function addCard(data, cardTemplateSelector) {
-    const cardElement = createNewCard(data, cardTemplateSelector)
-    placeElement.prepend(cardElement);
-}
-
-//Открытие формы для редактирования профиля (кнопка edit)
-function editProfile() {
-    nameInput.value = profileAuthor.textContent;
-    aboutInput.value = profileDescription.textContent;
-    openPopup(popupEdit);
-}
-
-//Отправка формы редактирования профиля
-function handleProfileFormSubmit (evt) {
-    evt.preventDefault();
-    profileAuthor.textContent = nameInput.value;
-    profileDescription.textContent = aboutInput.value;
-    closePopup(popupEdit);
-}
-
-//Загрузка карточек из массива
-initialCards.forEach(function(item) {
-    addCard(item, '.elements__item');
+//Экземпляр профиля
+const profile = new UserInfo({
+    profileName: '.profile__author',
+    profileDescription: '.profile__description'
 });
 
-//Добавление карточки нового места (отправка формы)
-const handleCardFormSubmit = (evt) => {
-    evt.preventDefault();
-    const data = {
-        name: placeInput.value,
-        link: linkInput.value
+//Экземпляр формы редактирования профиля
+const popupEditProfile = new PopupWithForm(popupEdit, {
+    handleSubmitForm: (formData) => {
+        profile.setUserInfo(formData);
+        popupEditProfile.close();
     }
-    addCard(data, '.elements__item');
-    closePopup(popupAdd);
-    formAdd.reset();
-    addCardValidator.disableSubmitButton();
+});
+
+//Заполнение полей формы редактирования профиля
+function editProfile() {
+    const userData = profile.getUserInfo();
+    nameInput.value = userData.name;
+    aboutInput.value = userData.info;
 }
 
+popupEditProfile.setEventListeners();
+
 //Открытие формы редактирования
-buttonEditProfile.addEventListener('click', editProfile);
+buttonEditProfile.addEventListener('click', function () {
+    editProfile();
+    popupEditProfile.open();
+    profileValidator._toggleButtonState();
+});
+
+
+
+
+//Экземпляр формы добавления карточки
+const popupAddCard = new PopupWithForm(popupAdd, {
+    handleSubmitForm: (formData) => {
+        cards.addItem(formData);
+    }
+});
+
+popupAddCard.setEventListeners();
 
 //Открытие формы добавления карточки
 buttonAddCard.addEventListener('click', () => {
+    popupAddCard.open();
+    addCardValidator._toggleButtonState();
     addCardValidator.resetValidation();
-    openPopup(popupAdd);
 });
 
-//Отправка формы
-popupEdit.addEventListener('submit', handleProfileFormSubmit);
-popupAdd.addEventListener('submit', handleCardFormSubmit);
+
+
+//Экземпляр попапа просмотра картинки
+const popupOpenPicture = new PopupWithImage(popupOpenImage);
+
+const createNewCard = (data) => {
+    const card = new Card({
+            data, handleCardClick: () => {
+            popupOpenPicture.open(data.name, data.link);
+            }
+        }, '.elements__item'
+    );
+    return card;
+}
+
+popupOpenPicture.setEventListeners();
+
+const cards = new Section({
+    items: initialCards, renderer: (initialCards) => {
+        const card = createNewCard(initialCards);
+        return card.createCard();
+    }
+}, '.elements__box');
+cards.renderItems();
+
+
+
+
+
+

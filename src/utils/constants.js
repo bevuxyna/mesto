@@ -30,31 +30,39 @@ export const linkInput = formAdd.querySelector('.popup__input_type_link');
 export const cardTemplate = document.querySelector('.elements__item').content;
 export const placeElement = document.querySelector('.elements__box');
 
+
+import baikalImage from '../styles/images/philipp-trubchenko-08lvM7w-G30-unsplash.jpg';
+import elbrusImage from '../styles/images/dmitrii-vaccinium-9qsK2QHidmg-unsplash.jpg';
+import teleckoeImage from '../styles/images/nick-night-v_0g5mGwHM0-unsplash.jpg';
+import arhyzImage from '../styles/images/denis-zelenykh-CvSvsqdFLcI-unsplash.jpg';
+import ruskealaImage from '../styles/images/victor-malyushev-qGcnIyX0SZU-unsplash (1).jpg';
+import ostrovRusskiyImage from '../styles/images/fedor-shlyapnikov-mc3sRmbEA2o-unsplash (1).jpg';
+
 //Массив карточек мест
 export const initialCards = [
     {
         name: 'Байкал',
-        link: 'images/philipp-trubchenko-08lvM7w-G30-unsplash.jpg'
+        link: baikalImage
     },
     {
         name: 'Эльбрус',
-        link: 'images/dmitrii-vaccinium-9qsK2QHidmg-unsplash.jpg'
+        link: elbrusImage
     },
     {
         name: 'Телецкое, Республика Алтай',
-        link: 'images/nick-night-v_0g5mGwHM0-unsplash.jpg'
+        link: teleckoeImage
     },
     {
         name: 'Архыз',
-        link: 'images/denis-zelenykh-CvSvsqdFLcI-unsplash.jpg'
+        link: arhyzImage
     },
     {
         name: 'Рускеала',
-        link: 'images/victor-malyushev-qGcnIyX0SZU-unsplash%20(1).jpg'
+        link: ruskealaImage
     },
     {
         name: 'Остров Русский',
-        link: 'images/fedor-shlyapnikov-mc3sRmbEA2o-unsplash%20(1).jpg'
+        link: ostrovRusskiyImage
     }
 ];
 

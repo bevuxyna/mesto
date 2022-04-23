@@ -1,7 +1,3 @@
-import {popupOpenImage, popupPicture, popupFigcaption} from '../utils/constants.js';
-
-import{openPopup} from '../scripts/index.js';
-
 export class Card {
     constructor({data, handleCardClick},cardTemplateSelector) {
         this._title = data.name;
