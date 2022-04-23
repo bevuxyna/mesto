@@ -1,7 +1,6 @@
 export class Popup {
     constructor(popupSelector) {
         this._popupSelector = popupSelector;
-        this._popupCloseButton = this._popupSelector.querySelector('.popup__button-close');
     }
 
     open() {
@@ -26,6 +25,5 @@ export class Popup {
                 this.close();
             }
         });
-
     }
 }
