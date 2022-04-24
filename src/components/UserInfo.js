@@ -1,5 +1,3 @@
-import {aboutInput, nameInput, profileAuthor, profileDescription} from "../utils/constants";
-
 export class UserInfo {
     constructor({profileName, profileDescription}) {
         this._name = document.querySelector(profileName);
@@ -9,8 +7,8 @@ export class UserInfo {
 //Возвращает объект с данными пользователя
     getUserInfo() {
         this._userData = {
-            name: this._name,
-            info: this._info
+            userName: this._name.textContent,
+            userInfo: this._info.textContent
         }
         return this._userData;
     }

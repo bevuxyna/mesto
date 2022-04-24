@@ -39,8 +39,8 @@ const popupEditProfile = new PopupWithForm(popupEdit, {
 //Заполнение полей формы редактирования профиля
 function editProfile() {
     const userData = profile.getUserInfo();
-    nameInput.value = userData.name;
-    aboutInput.value = userData.info;
+    nameInput.value = userData.userName;
+    aboutInput.value = userData.userInfo;
 }
 
 popupEditProfile.setEventListeners();
@@ -59,6 +59,7 @@ buttonEditProfile.addEventListener('click', function () {
 const popupAddCard = new PopupWithForm(popupAdd, {
     handleSubmitForm: (formData) => {
         cards.addItem(formData);
+        popupAddCard.close();
     }
 });
 
