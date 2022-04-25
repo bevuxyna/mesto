@@ -12,7 +12,7 @@ import {
     buttonEditProfile,
     buttonAddCard,
     nameInput,
-    aboutInput, initialCards, validationSettings
+    aboutInput, cardTemplate, placeElement, initialCards, validationSettings,
 } from '../utils/constants.js';
 
 
@@ -82,8 +82,7 @@ const createNewCard = (data) => {
             data, handleCardClick: () => {
             popupOpenPicture.open(data.name, data.link);
             }
-        }, '.elements__item'
-    );
+        }, cardTemplate);
     return card;
 }
 
@@ -94,7 +93,7 @@ const cards = new Section({
         const card = createNewCard(initialCards);
         return card.createCard();
     }
-}, '.elements__box');
+}, placeElement);
 cards.renderItems();
 
 

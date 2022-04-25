@@ -27,8 +27,8 @@ export const placeInput = formAdd.querySelector('.popup__input_type_place');
 export const linkInput = formAdd.querySelector('.popup__input_type_link');
 
 //Template карточек мест
-export const cardTemplate = document.querySelector('.elements__item').content;
-export const placeElement = document.querySelector('.elements__box');
+export const cardTemplate = '.elements__item';
+export const placeElement = '.elements__box';
 
 
 import baikalImage from '../styles/images/philipp-trubchenko-08lvM7w-G30-unsplash.jpg';
