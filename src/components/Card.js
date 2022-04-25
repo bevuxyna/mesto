@@ -4,7 +4,15 @@ export class Card {
         this._link = data.link;
         this.handleCardClick = handleCardClick;
         this._cardTemplateSelector = cardTemplateSelector;
-        this._cardTemplate = document.querySelector(this._cardTemplateSelector).content.querySelector('.element');
+    }
+
+    _getTemplate() {
+        const cardTemplate = document
+            .querySelector(this._cardTemplateSelector)
+            .content
+            .querySelector('.element')
+            .cloneNode(true);
+        return cardTemplate;
     }
 
     _handleLikeButton = () => {
@@ -30,7 +38,7 @@ export class Card {
     }
 
     createCard() {
-        this._cardElement = this._cardTemplate.cloneNode(true);
+        this._cardElement = this._getTemplate();
         this._cardImage = this._cardElement.querySelector('.element__image');
         this._buttonLike = this._cardElement.querySelector('.element__like-button');
 
