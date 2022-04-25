@@ -49,7 +49,7 @@ popupEditProfile.setEventListeners();
 buttonEditProfile.addEventListener('click', function () {
     editProfile();
     popupEditProfile.open();
-    profileValidator._toggleButtonState();
+    profileValidator.toggleButtonState();
 });
 
 
@@ -68,7 +68,7 @@ popupAddCard.setEventListeners();
 //Открытие формы добавления карточки
 buttonAddCard.addEventListener('click', () => {
     popupAddCard.open();
-    addCardValidator._toggleButtonState();
+    addCardValidator.toggleButtonState();
     addCardValidator.resetValidation();
 });
 
