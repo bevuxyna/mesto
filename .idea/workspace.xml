@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: refactor">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Popup.js" afterDir="false" />
-    </list>
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: bind _handleEscClose" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,14 +174,7 @@
       <workItem from="1650793360970" duration="2844000" />
       <workItem from="1650797532079" duration="1589000" />
       <workItem from="1650832710646" duration="620000" />
-      <workItem from="1650880164495" duration="3639000" />
-    </task>
-    <task id="LOCAL-00011" summary="fix: element's direction">
-      <created>1644425173807</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1644425173807</updated>
+      <workItem from="1650880164495" duration="4219000" />
     </task>
     <task id="LOCAL-00012" summary="fix: review">
       <created>1644656671099</created>
@@ -522,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650882720777</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="fix: bind _handleEscClose">
+      <created>1650884758339</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1650884758339</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: function name" />
     <MESSAGE value="fix: minlength and maxlength atributes" />
     <MESSAGE value="feature: close popup on click outside and by pressing the esc key" />
     <MESSAGE value="feature: form validation" />
@@ -577,7 +573,8 @@
     <MESSAGE value="fix: refactor index.js" />
     <MESSAGE value="fix: make toggleButtonState private" />
     <MESSAGE value="fix: refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: refactor" />
+    <MESSAGE value="fix: bind _handleEscClose" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: bind _handleEscClose" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
