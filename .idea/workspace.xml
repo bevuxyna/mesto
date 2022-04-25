@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="refactor">
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Popup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/styles/blocks/profile/__description/profile__description.css" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/dist/main.js" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -73,11 +72,11 @@
       <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto\src\pages" />
       <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto\src\components" />
       <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto\src\utils" />
       <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto\src\styles" />
       <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto\src" />
-      <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto\blocks\popup\__button-submit\_disabled" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -176,49 +175,9 @@
       <workItem from="1650559329261" duration="5778000" />
       <workItem from="1650715173385" duration="27907000" />
       <workItem from="1650793360970" duration="2844000" />
-      <workItem from="1650797532079" duration="730000" />
-    </task>
-    <task id="LOCAL-00005" summary="commit">
-      <created>1644234916443</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1644234916443</updated>
-    </task>
-    <task id="LOCAL-00006" summary="commit">
-      <created>1644237718008</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1644237718008</updated>
-    </task>
-    <task id="LOCAL-00007" summary="commit">
-      <created>1644237724891</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1644237724891</updated>
-    </task>
-    <task id="LOCAL-00008" summary="fix: add README.md">
-      <created>1644238181870</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1644238181870</updated>
-    </task>
-    <task id="LOCAL-00009" summary="commit">
-      <created>1644262424242</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1644262424242</updated>
-    </task>
-    <task id="LOCAL-00010" summary="fix: overflow">
-      <created>1644262715202</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1644262715202</updated>
+      <workItem from="1650797532079" duration="1589000" />
+      <workItem from="1650832710646" duration="620000" />
+      <workItem from="1650880164495" duration="3639000" />
     </task>
     <task id="LOCAL-00011" summary="fix: element's direction">
       <created>1644425173807</created>
@@ -521,7 +480,49 @@
       <option name="project" value="LOCAL" />
       <updated>1650795950838</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="fix: property 'static' webpack.config.js">
+      <created>1650798529858</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1650798529858</updated>
+    </task>
+    <task id="LOCAL-00055" summary="fix: smooth popup opening">
+      <created>1650881440677</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1650881440677</updated>
+    </task>
+    <task id="LOCAL-00056" summary="fix: template tag implementation">
+      <created>1650882007630</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1650882007631</updated>
+    </task>
+    <task id="LOCAL-00057" summary="fix: refactor index.js">
+      <created>1650882039319</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1650882039319</updated>
+    </task>
+    <task id="LOCAL-00058" summary="fix: make toggleButtonState private">
+      <created>1650882261609</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1650882261609</updated>
+    </task>
+    <task id="LOCAL-00059" summary="fix: refactor">
+      <created>1650882720777</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1650882720777</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,12 +552,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: open image" />
-    <MESSAGE value="fix: close image popup" />
-    <MESSAGE value="feat: add new card" />
-    <MESSAGE value="fix: transitions on the CSS display property" />
-    <MESSAGE value="fix: grid-template-columns" />
-    <MESSAGE value="fix" />
     <MESSAGE value="fix: function name" />
     <MESSAGE value="fix: minlength and maxlength atributes" />
     <MESSAGE value="feature: close popup on click outside and by pressing the esc key" />
@@ -576,7 +571,13 @@
     <MESSAGE value="fix: close popup by ESC and click on overlay" />
     <MESSAGE value="fix: export initialCards" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="fix: property 'static' webpack.config.js" />
+    <MESSAGE value="fix: smooth popup opening" />
+    <MESSAGE value="fix: template tag implementation" />
+    <MESSAGE value="fix: refactor index.js" />
+    <MESSAGE value="fix: make toggleButtonState private" />
+    <MESSAGE value="fix: refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: refactor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
