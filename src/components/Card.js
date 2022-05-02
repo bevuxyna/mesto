@@ -26,7 +26,7 @@ export class Card {
 
     _setEventListeners() {
         //Удаление карточки
-        this._cardElement.querySelector('.element__delete-button').addEventListener('click', this._deleteCard);
+        //this._cardElement.querySelector('.element__delete-button').addEventListener('click', this._deleteCard);
 
         //Активная кнопка лайка
         this._buttonLike.addEventListener('click', this._handleLikeButton);

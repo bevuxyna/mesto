@@ -3,6 +3,7 @@ export const popups = document.querySelectorAll('.popup');
 export const popupEdit = document.querySelector('.popup_type_profile');
 export const popupAdd = document.querySelector('.popup_type_add');
 export const popupEditAvatar = document.querySelector('.popup_type_avatar');
+export const popupConfirmDelete = document.querySelector('.popup_type_delete');
 
 export const popupOpenImage = document.querySelector('.popup_type_open-image');
 export const popupPicture = popupOpenImage.querySelector('.popup__picture');
@@ -20,6 +21,7 @@ export const profileDescription = document.querySelector('.profile__description'
 export const buttonEditProfile = document.querySelector('.profile__edit-button');
 export const buttonAddCard = document.querySelector('.profile__add-button');
 export const buttonEditAvatar = document.querySelector('.profile__edit-avatar-button');
+export const buttonDelete = document.querySelector('.element__delete-button');
 
 //Инпуты
 export const nameInput = formEdit.querySelector('.popup__input_type_name');

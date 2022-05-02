@@ -8,11 +8,12 @@ import {PopupWithImage} from "../components/PopupWithImage";
 import {UserInfo} from "../components/UserInfo";
 import {
     popupEdit,
-    popupAdd, popupEditAvatar, popupOpenImage,
-    buttonEditProfile, buttonAddCard, buttonEditAvatar,
+    popupAdd, popupEditAvatar, popupOpenImage, popupConfirmDelete,
+    buttonEditProfile, buttonAddCard, buttonEditAvatar, buttonDelete,
     nameInput,
     aboutInput, cardTemplate, placeElement, initialCards, validationSettings
 } from '../utils/constants.js';
+import {PopupWithConfirm} from "../components/PopupWithConfirm";
 
 
 const profileValidator = new FormValidator(validationSettings, popupEdit);
@@ -124,6 +125,15 @@ buttonEditAvatar.addEventListener('click', () => {
     avatarValidator.toggleButtonState();
     avatarValidator.resetValidation();
 });
+
+
+const popupDeleteCard = new PopupWithConfirm(popupConfirmDelete);
+
+buttonDelete.addEventListener('click', () => {
+    popupDeleteCard.open();
+});
+
+
 
 
 
