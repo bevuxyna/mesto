@@ -8,18 +8,19 @@ import {PopupWithImage} from "../components/PopupWithImage";
 import {UserInfo} from "../components/UserInfo";
 import {
     popupEdit,
-    popupAdd, popupOpenImage,
-    buttonEditProfile,
-    buttonAddCard,
+    popupAdd, popupEditAvatar, popupOpenImage,
+    buttonEditProfile, buttonAddCard, buttonEditAvatar,
     nameInput,
-    aboutInput, cardTemplate, placeElement, initialCards, validationSettings,
+    aboutInput, cardTemplate, placeElement, initialCards, validationSettings
 } from '../utils/constants.js';
 
 
 const profileValidator = new FormValidator(validationSettings, popupEdit);
 const addCardValidator = new FormValidator(validationSettings, popupAdd);
+const avatarValidator = new FormValidator(validationSettings, popupEditAvatar);
 profileValidator.enableValidation();
 addCardValidator.enableValidation();
+avatarValidator.enableValidation();
 
 
 //Экземпляр профиля
@@ -50,7 +51,11 @@ buttonEditProfile.addEventListener('click', function () {
     editProfile();
     popupEditProfile.open();
     profileValidator.toggleButtonState();
+    profileValidator.resetValidation();
 });
+
+
+
 
 
 
@@ -95,6 +100,30 @@ const cards = new Section({
     }
 }, placeElement);
 cards.renderItems();
+
+
+
+
+
+
+
+//Экземпляр формы редактирования аватара
+const editAvatar = new PopupWithForm(popupEditAvatar, {
+    handleSubmitForm: (formData) => {
+
+        editAvatar.close();
+    }
+
+});
+
+editAvatar.setEventListeners();
+
+//Открытие формы редактирования аватара
+buttonEditAvatar.addEventListener('click', () => {
+    editAvatar.open();
+    avatarValidator.toggleButtonState();
+    avatarValidator.resetValidation();
+});
 
 
 

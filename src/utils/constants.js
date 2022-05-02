@@ -2,6 +2,7 @@
 export const popups = document.querySelectorAll('.popup');
 export const popupEdit = document.querySelector('.popup_type_profile');
 export const popupAdd = document.querySelector('.popup_type_add');
+export const popupEditAvatar = document.querySelector('.popup_type_avatar');
 
 export const popupOpenImage = document.querySelector('.popup_type_open-image');
 export const popupPicture = popupOpenImage.querySelector('.popup__picture');
@@ -18,7 +19,7 @@ export const profileDescription = document.querySelector('.profile__description'
 //Кнопки
 export const buttonEditProfile = document.querySelector('.profile__edit-button');
 export const buttonAddCard = document.querySelector('.profile__add-button');
-export const buttonSubmitForm = popupAdd.querySelector('.popup__button-submit');
+export const buttonEditAvatar = document.querySelector('.profile__edit-avatar-button');
 
 //Инпуты
 export const nameInput = formEdit.querySelector('.popup__input_type_name');
