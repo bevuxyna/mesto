@@ -1,4 +1,6 @@
 //Попапы
+import {Api} from "../components/Api";
+
 export const popups = document.querySelectorAll('.popup');
 export const popupEdit = document.querySelector('.popup_type_profile');
 export const popupAdd = document.querySelector('.popup_type_add');
@@ -78,3 +80,11 @@ export const validationSettings = {
     inputErrorClass: 'popup__input_type_error',
     errorClass: 'popup__error_visible',
 }
+
+export const apiOptions = new Api({
+    baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-40',
+    headers: {
+        authorization: '051d708c-058c-4034-9252-0a36ac6463d7',
+        'Content-Type': 'application/json'
+    }
+});
