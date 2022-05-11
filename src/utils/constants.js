@@ -1,6 +1,12 @@
-//Попапы
-import {Api} from "../components/Api";
+export const apiOptions = {
+    url: 'https://mesto.nomoreparties.co/v1/cohort-40',
+    headers: {
+        authorization: '051d708c-058c-4034-9252-0a36ac6463d7',
+        'Content-Type': 'application/json'
+    }
+};
 
+//Попапы
 export const popups = document.querySelectorAll('.popup');
 export const popupEdit = document.querySelector('.popup_type_profile');
 export const popupAdd = document.querySelector('.popup_type_add');
@@ -14,6 +20,7 @@ export const popupFigcaption = popupOpenImage.querySelector('.popup__figcaption'
 //Формы
 export const formEdit = popupEdit.querySelector('.popup__form_type_profile');
 export const formAdd = popupAdd.querySelector('.popup__form_type_add');
+export const formAvatar = popupEditAvatar.querySelector('.popup__form_type_avatar');
 
 //Элементы формы редактирования профиля
 export const profileAuthor = document.querySelector('.profile__author');
@@ -30,6 +37,7 @@ export const nameInput = formEdit.querySelector('.popup__input_type_name');
 export const aboutInput = formEdit.querySelector('.popup__input_type_about');
 export const placeInput = formAdd.querySelector('.popup__input_type_place');
 export const linkInput = formAdd.querySelector('.popup__input_type_link');
+export const avatarInput = formAvatar.querySelector('.popup__input_type_avatar');
 
 //Template карточек мест
 export const cardTemplate = '.elements__item';
@@ -81,10 +89,3 @@ export const validationSettings = {
     errorClass: 'popup__error_visible',
 }
 
-export const apiOptions = new Api({
-    baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-40',
-    headers: {
-        authorization: '051d708c-058c-4034-9252-0a36ac6463d7',
-        'Content-Type': 'application/json'
-    }
-});

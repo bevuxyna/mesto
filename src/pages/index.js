@@ -1,5 +1,7 @@
 import './index.css';
 
+import {apiOptions} from "../utils/constants";
+import {Api} from "../components/Api";
 import {FormValidator} from '../components/FormValidator.js';
 import {Card} from '../components/Card.js';
 import {Section} from "../components/Section";
@@ -11,9 +13,13 @@ import {
     popupAdd, popupEditAvatar, popupOpenImage, popupConfirmDelete,
     buttonEditProfile, buttonAddCard, buttonEditAvatar, buttonDelete,
     nameInput,
-    aboutInput, cardTemplate, placeElement, initialCards, validationSettings
+    aboutInput, avatarInput, cardTemplate, placeElement, initialCards, validationSettings
 } from '../utils/constants.js';
 import {PopupWithConfirm} from "../components/PopupWithConfirm";
+
+
+
+const api = new Api(apiOptions);
 
 
 const profileValidator = new FormValidator(validationSettings, popupEdit);
@@ -27,14 +33,24 @@ avatarValidator.enableValidation();
 //Экземпляр профиля
 const profile = new UserInfo({
     profileName: '.profile__author',
-    profileDescription: '.profile__description'
+    profileDescription: '.profile__description',
+    profileAvatar: '.profile__avatar'
 });
 
 //Экземпляр формы редактирования профиля
 const popupEditProfile = new PopupWithForm(popupEdit, {
     handleSubmitForm: (formData) => {
-        profile.setUserInfo(formData);
-        popupEditProfile.close();
+        api.updateUserInfo(formData)
+            .then((res) => {
+                profile.setUserInfo(res);
+                popupEditProfile.close();
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+            .finally(() => {
+                popupEditProfile.renderLoading(false);
+            })
     }
 });
 
@@ -107,11 +123,20 @@ cards.renderItems();
 
 
 
-
 //Экземпляр формы редактирования аватара
 const editAvatar = new PopupWithForm(popupEditAvatar, {
     handleSubmitForm: (formData) => {
-
+        api.updateAvatar(formData)
+            .then((res) => {
+                profile.setUserAvatar(res);
+                popupEditProfile.close();
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+            .finally(() => {
+                popupEditProfile.renderLoading(false);
+            })
         editAvatar.close();
     }
 
@@ -127,11 +152,11 @@ buttonEditAvatar.addEventListener('click', () => {
 });
 
 
+
+
 const popupDeleteCard = new PopupWithConfirm(popupConfirmDelete);
 
-buttonDelete.addEventListener('click', () => {
-    popupDeleteCard.open();
-});
+
 
 
 
