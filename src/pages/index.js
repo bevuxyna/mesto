@@ -21,6 +21,32 @@ import {PopupWithConfirm} from "../components/PopupWithConfirm";
 
 const api = new Api(apiOptions);
 
+let currentUser = '';
+
+const cards = new Section({
+    items: [],
+    renderer: (item) => {
+        const card = createNewCard(items);
+        return card.createCard();
+    }
+}, placeElement);
+
+Promise.all([api.getUserInfo(), api.getInitialCards()])
+    .then(([userData, cardElement]) => {
+        currentUser = userData._id;
+
+        profile.setUserInfo(userData);
+        profile.setUserAvatar(userData);
+
+        const card = createNewCard(cardElement)
+        cards.addItem(card);
+        cards.renderItems();
+        }
+    )
+    .catch((err) => {
+        console.log(err)
+    })
+
 
 const profileValidator = new FormValidator(validationSettings, popupEdit);
 const addCardValidator = new FormValidator(validationSettings, popupAdd);
@@ -40,6 +66,7 @@ const profile = new UserInfo({
 //Экземпляр формы редактирования профиля
 const popupEditProfile = new PopupWithForm(popupEdit, {
     handleSubmitForm: (formData) => {
+        popupEditProfile.renderLoading(true);
         api.updateUserInfo(formData)
             .then((res) => {
                 profile.setUserInfo(res);
@@ -96,28 +123,28 @@ buttonAddCard.addEventListener('click', () => {
 
 
 
+const popupDeleteCard = new PopupWithConfirm(popupConfirmDelete);
+
+
+
 //Экземпляр попапа просмотра картинки
 const popupOpenPicture = new PopupWithImage(popupOpenImage);
 
 const createNewCard = (data) => {
     const card = new Card({
-            data, handleCardClick: () => {
+            data,
+        handleCardClick: () => {
             popupOpenPicture.open(data.name, data.link);
-            }
+            },
+
         }, cardTemplate);
     return card;
 }
 
 popupOpenPicture.setEventListeners();
 
-const cards = new Section({
-    items: initialCards, renderer: (initialCards) => {
-        const card = createNewCard(initialCards);
-        return card.createCard();
-    }
-}, placeElement);
-cards.renderItems();
 
+cards.renderItems();
 
 
 
@@ -126,16 +153,17 @@ cards.renderItems();
 //Экземпляр формы редактирования аватара
 const editAvatar = new PopupWithForm(popupEditAvatar, {
     handleSubmitForm: (formData) => {
+        editAvatar.renderLoading(true);
         api.updateAvatar(formData)
             .then((res) => {
                 profile.setUserAvatar(res);
-                popupEditProfile.close();
+                editAvatar.close();
             })
             .catch((err) => {
                 console.log(err);
             })
             .finally(() => {
-                popupEditProfile.renderLoading(false);
+                editAvatar.renderLoading(false);
             })
         editAvatar.close();
     }
@@ -154,7 +182,7 @@ buttonEditAvatar.addEventListener('click', () => {
 
 
 
-const popupDeleteCard = new PopupWithConfirm(popupConfirmDelete);
+
 
 
 

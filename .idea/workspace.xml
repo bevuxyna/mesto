@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="fix: bind _handleEscClose" />
+    <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,8 +43,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/styles/blocks/profile/__description/profile__description.css" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/styles/blocks/profile/__description/profile__description.css" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,21 +57,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto" />
@@ -174,84 +179,27 @@
       <workItem from="1650793360970" duration="2844000" />
       <workItem from="1650797532079" duration="1589000" />
       <workItem from="1650832710646" duration="620000" />
-      <workItem from="1650880164495" duration="4219000" />
-    </task>
-    <task id="LOCAL-00012" summary="fix: review">
-      <created>1644656671099</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1644656671099</updated>
-    </task>
-    <task id="LOCAL-00013" summary="fix: normalize">
-      <created>1644656747164</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1644656747164</updated>
-    </task>
-    <task id="LOCAL-00014" summary="fix: script">
-      <created>1644656834171</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1644656834171</updated>
-    </task>
-    <task id="LOCAL-00015" summary="fix: close button">
-      <created>1644657335650</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1644657335650</updated>
-    </task>
-    <task id="LOCAL-00016" summary="fix: edit popup">
-      <created>1645376980558</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1645376980558</updated>
-    </task>
-    <task id="LOCAL-00017" summary="fix: add popup">
-      <created>1645383737634</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1645383737634</updated>
-    </task>
-    <task id="LOCAL-00018" summary="fix: add popup">
-      <created>1645466985503</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1645466985503</updated>
-    </task>
-    <task id="LOCAL-00019" summary="feature: like button">
-      <created>1645540555874</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1645540555874</updated>
-    </task>
-    <task id="LOCAL-00020" summary="feat: open image">
-      <created>1645550408071</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1645550408071</updated>
-    </task>
-    <task id="LOCAL-00021" summary="fix: close image popup">
-      <created>1645550806419</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1645550806419</updated>
-    </task>
-    <task id="LOCAL-00022" summary="feat: add new card">
-      <created>1645552642530</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1645552642530</updated>
+      <workItem from="1650880164495" duration="4963000" />
+      <workItem from="1650911975483" duration="150000" />
+      <workItem from="1651064990119" duration="698000" />
+      <workItem from="1651068146099" duration="20000" />
+      <workItem from="1651070185550" duration="109000" />
+      <workItem from="1651173558962" duration="843000" />
+      <workItem from="1651491122578" duration="12970000" />
+      <workItem from="1651518460344" duration="2197000" />
+      <workItem from="1651692980598" duration="878000" />
+      <workItem from="1651853062031" duration="312000" />
+      <workItem from="1651853558998" duration="23000" />
+      <workItem from="1651859584713" duration="2303000" />
+      <workItem from="1651921724425" duration="4388000" />
+      <workItem from="1652010668317" duration="2686000" />
+      <workItem from="1652039314637" duration="5039000" />
+      <workItem from="1652094871712" duration="3453000" />
+      <workItem from="1652099088944" duration="9406000" />
+      <workItem from="1652264351495" duration="63000" />
+      <workItem from="1652264484121" duration="23148000" />
+      <workItem from="1652302456110" duration="252000" />
+      <workItem from="1652348813914" duration="13115000" />
     </task>
     <task id="LOCAL-00023" summary="fix: transitions on the CSS display property">
       <created>1645553210174</created>
@@ -519,7 +467,84 @@
       <option name="project" value="LOCAL" />
       <updated>1650884758339</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fix: bind _handleEscClose">
+      <created>1650885346862</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1650885346862</updated>
+    </task>
+    <task id="LOCAL-00062" summary="feature: edit avatar popup">
+      <created>1651508037991</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1651508037991</updated>
+    </task>
+    <task id="LOCAL-00063" summary="feature: confirm delete card popup">
+      <created>1651511807425</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1651511807425</updated>
+    </task>
+    <task id="LOCAL-00064" summary="feature: Api.js">
+      <created>1651923682086</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1651923682102</updated>
+    </task>
+    <task id="LOCAL-00065" summary="feature: like count">
+      <created>1652041076909</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1652041076909</updated>
+    </task>
+    <task id="LOCAL-00066" summary="feature: PopupWithConfirm.js">
+      <created>1652096749824</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1652096749825</updated>
+    </task>
+    <task id="LOCAL-00067" summary="fix: PopupWithConfirm.js">
+      <created>1652097255277</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1652097255277</updated>
+    </task>
+    <task id="LOCAL-00068" summary="feature: renderLoading">
+      <created>1652097438795</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1652097438795</updated>
+    </task>
+    <task id="LOCAL-00069" summary="feature: set user avatar">
+      <created>1652097866945</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1652097866945</updated>
+    </task>
+    <task id="LOCAL-00070" summary="feature: set user avatar">
+      <created>1652268169405</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1652268169406</updated>
+    </task>
+    <task id="LOCAL-00071" summary="commit">
+      <created>1652268224146</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1652268224146</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,15 +574,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: minlength and maxlength atributes" />
-    <MESSAGE value="feature: close popup on click outside and by pressing the esc key" />
-    <MESSAGE value="feature: form validation" />
-    <MESSAGE value="fix: form validation" />
-    <MESSAGE value="fix: disable submit button" />
-    <MESSAGE value="commit" />
-    <MESSAGE value="feature: cards.js" />
-    <MESSAGE value="fix: error message min-height" />
-    <MESSAGE value="feature: disableSubmitButton and enableSubmitButton functions" />
     <MESSAGE value="feature: FormValidator.js" />
     <MESSAGE value="fix: OOP refactoring" />
     <MESSAGE value="feature: constants.js" />
@@ -574,7 +590,16 @@
     <MESSAGE value="fix: make toggleButtonState private" />
     <MESSAGE value="fix: refactor" />
     <MESSAGE value="fix: bind _handleEscClose" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: bind _handleEscClose" />
+    <MESSAGE value="feature: edit avatar popup" />
+    <MESSAGE value="feature: confirm delete card popup" />
+    <MESSAGE value="feature: Api.js" />
+    <MESSAGE value="feature: like count" />
+    <MESSAGE value="feature: PopupWithConfirm.js" />
+    <MESSAGE value="fix: PopupWithConfirm.js" />
+    <MESSAGE value="feature: renderLoading" />
+    <MESSAGE value="feature: set user avatar" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
