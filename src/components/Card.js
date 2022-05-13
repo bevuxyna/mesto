@@ -74,6 +74,10 @@ export class Card {
         return this._likes.find(user => user._id === this._userId);
     }
 
+    _checkOwnLike() {
+        this.isLiked() ? this.addLike() : this.deleteLike();
+    }
+
     setLike(data) {
         this._likes = data;
         this._likesCount.textContent = this._likes.length;
@@ -85,10 +89,6 @@ export class Card {
 
     deleteLike = () => {
         this._buttonLike.classList.remove('element__like-button_active');
-    }
-
-    _checkOwnLike() {
-        this.isLiked() ? this.addLike() : this.deleteLike();
     }
 }
 
