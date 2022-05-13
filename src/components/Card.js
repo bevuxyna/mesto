@@ -1,11 +1,10 @@
 export class Card {
     constructor({data, userId, handleCardClick, handleDeleteClick, handleLikeCard}, cardTemplateSelector) {
-        this._data = data;
         this._title = data.name;
         this._link = data.link;
-        this._like = data.like;
+        this._likes = data.likes;
         this._id = data._id;
-        this._ownerId = data.ownerId;
+        this._ownerId = data.owner._id;
 
         this._userId = userId;
 
@@ -17,12 +16,11 @@ export class Card {
     }
 
     _getTemplate() {
-        const cardTemplate = document
+        return document
             .querySelector(this._cardTemplateSelector)
             .content
             .querySelector('.element')
             .cloneNode(true);
-        return cardTemplate;
     }
 
     createCard() {
@@ -30,7 +28,7 @@ export class Card {
         this._cardImage = this._cardElement.querySelector('.element__image');
         this._buttonLike = this._cardElement.querySelector('.element__like-button');
         this._likesCount = this._cardElement.querySelector('.element__like-count');
-        this._buttonDelete = this._cardElement.document.querySelector('.element__delete-button');
+        this._buttonDelete = this._cardElement.querySelector('.element__delete-button');
 
         this._setEventListeners();
 
@@ -38,13 +36,9 @@ export class Card {
         this._cardImage.src = this._cardImage.src = this._link;
         this._cardImage.alt = this._cardImage.alt = this._title;
 
-        if (this._ownerId !== this._userId) {
-            this._buttonDelete.style.display = 'none';
-        }
+        this._hideDeleteButton();
 
-        this. _hideDeleteButton();
-
-        this.setLike(this._like);
+        this.setLike(this._likes);
 
         this._checkOwnLike();
 
@@ -57,7 +51,7 @@ export class Card {
     }
 
     _hideDeleteButton() {
-        if (this._userId !== this._ownerId) {
+        if (this._ownerId !== this._userId) {
             this._buttonDelete.remove();
         }
     }
@@ -77,13 +71,12 @@ export class Card {
     }
 
     isLiked() {
-        const isLikedCard = this._like.find(user => user._id === this._userId);
-        return isLikedCard;
+        return this._likes.find(user => user._id === this._userId);
     }
 
-    setLike() {
-        this._like = data;
-        this._likesCount.textContent = this._like.length;
+    setLike(data) {
+        this._likes = data;
+        this._likesCount.textContent = this._likes.length;
     }
 
     addLike = () => {

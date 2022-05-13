@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWithConfirm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithConfirm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +81,16 @@
       <recent name="C:\Users\Xiaomi\Desktop\Praktikum\dev\mesto\src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Node.js.PopupWithConfirm.js">
+    <configuration type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/">
+      <method v="2" />
+    </configuration>
+    <configuration type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/">
+      <method v="2" />
+    </configuration>
+    <configuration name="PopupWithConfirm.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/PopupWithConfirm.js" working-dir="$PROJECT_DIR$/src/components">
+      <method v="2" />
+    </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -101,6 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.PopupWithConfirm.js" />
+        <item itemvalue="JavaScript Debug." />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
       </list>
@@ -198,14 +212,8 @@
       <workItem from="1652302456110" duration="252000" />
       <workItem from="1652348813914" duration="19295000" />
       <workItem from="1652379036714" duration="116000" />
-      <workItem from="1652384133501" duration="305000" />
-    </task>
-    <task id="LOCAL-00024" summary="fix: grid-template-columns">
-      <created>1645553647865</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1645553647865</updated>
+      <workItem from="1652384133501" duration="10018000" />
+      <workItem from="1652432684346" duration="16806000" />
     </task>
     <task id="LOCAL-00025" summary="fix">
       <created>1645554914292</created>
@@ -543,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652370441750</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="commit">
+      <created>1652384454013</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1652384454013</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,6 +614,13 @@
     <MESSAGE value="feature: set user avatar" />
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JavascriptDebugType">
+        <watch expression="userData" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

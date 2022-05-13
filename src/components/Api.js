@@ -72,6 +72,7 @@ export class Api {
             method: 'DELETE',
             headers: this._headers
         })
+            .then((res) => this._checkServerResponse(res));
     }
 
     //Постановка лайка
@@ -91,7 +92,5 @@ export class Api {
         })
             .then((res) => this._checkServerResponse(res));
     }
-
-
 }
 
