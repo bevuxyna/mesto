@@ -115,7 +115,6 @@ const popupEditNewAvatar = new PopupWithForm(popupEditAvatar, {
             .finally(() => {
                 popupEditNewAvatar.renderLoading(false);
             })
-        popupEditNewAvatar.close();
     }
 });
 

@@ -2,14 +2,15 @@ export class Api {
     constructor(options) {
         this._url = options.url;
         this._headers = options.headers;
-        this._checkServerResponse = ((res) => {
-            //Проверка ответа сервера
-            if (res.ok) {
-                return res.json();
-            }
-            //Отклоняем промис, чтобы перейти в блок catch, если сервер вернул ошибку
-            return Promise.reject(`Ошибка: ${res.status}`);
-        })
+    }
+
+    _checkServerResponse(res){
+        //Проверка ответа сервера
+        if (res.ok) {
+            return res.json();
+        }
+        //Отклоняем промис, чтобы перейти в блок catch, если сервер вернул ошибку
+        return Promise.reject(`Ошибка: ${res.status}`);
     }
 
     //Загрузка информации о пользователе с сервера

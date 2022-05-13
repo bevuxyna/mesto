@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d03fa07-3477-41b4-bc36-b762f7211c62" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWithConfirm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithConfirm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
@@ -59,6 +56,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -114,7 +113,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.PopupWithConfirm.js" />
-        <item itemvalue="JavaScript Debug." />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
       </list>
@@ -213,21 +211,9 @@
       <workItem from="1652348813914" duration="19295000" />
       <workItem from="1652379036714" duration="116000" />
       <workItem from="1652384133501" duration="10018000" />
-      <workItem from="1652432684346" duration="16806000" />
-    </task>
-    <task id="LOCAL-00025" summary="fix">
-      <created>1645554914292</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1645554914292</updated>
-    </task>
-    <task id="LOCAL-00026" summary="fix: function name">
-      <created>1645559900938</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1645559900938</updated>
+      <workItem from="1652432684346" duration="17141000" />
+      <workItem from="1652459819564" duration="61000" />
+      <workItem from="1652460208359" duration="306000" />
     </task>
     <task id="LOCAL-00027" summary="fix: minlength and maxlength atributes">
       <created>1647372423351</created>
@@ -558,7 +544,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652384454013</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="feature: delete card">
+      <created>1652457334112</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1652457334113</updated>
+    </task>
+    <task id="LOCAL-00075" summary="commit">
+      <created>1652457517184</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1652457517184</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feature: FormValidator.js" />
     <MESSAGE value="fix: OOP refactoring" />
     <MESSAGE value="feature: constants.js" />
     <MESSAGE value="fix: element__image.css" />
@@ -612,6 +611,7 @@
     <MESSAGE value="fix: PopupWithConfirm.js" />
     <MESSAGE value="feature: renderLoading" />
     <MESSAGE value="feature: set user avatar" />
+    <MESSAGE value="feature: delete card" />
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
